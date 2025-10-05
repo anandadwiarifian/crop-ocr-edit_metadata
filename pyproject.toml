@@ -1,0 +1,14 @@
+[project]
+name = "crop-images"
+version = "0.1.0"
+description = "Small utilities for cropping images"
+requires-python = ">=3.8"
+
+dependencies = [
+  "pillow",
+  "matplotlib",
+  "jupyter",
+  "ipympl",
+  "piexif",
+  "pytesseract",
+]
