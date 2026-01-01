@@ -27,9 +27,9 @@ def extract_text_from_image(image_path: str) -> str:
 
 def get_in_out_timestamp(text: str) -> tuple[datetime, datetime]:
     try:
-        date_match = re.search(r' Arbi .{3}, (.{11})', text).group(1).strip()
-        in_time_match = re.search(r'\nIN (\d{2}:\d{2} [AP]M)', text).group(1).strip()
-        out_time_match = re.search(r'\nIN \d{2}:\d{2} [AP]M.*?(\d{2}:\d{2} [AP]M)', text).group(1).strip()
+        date_match = re.search(r' Arbi .{3}, (.{11})', text).group(1).strip()  # ty:ignore[possibly-missing-attribute]
+        in_time_match = re.search(r'\nIN (\d{2}:\d{2} [AP]M)', text).group(1).strip()  # ty:ignore[possibly-missing-attribute]
+        out_time_match = re.search(r'\nIN \d{2}:\d{2} [AP]M.*?(\d{2}:\d{2} [AP]M)', text).group(1).strip()  # ty:ignore[possibly-missing-attribute]
 
         return (
             datetime.strptime(f"{date_match} {in_time_match}", "%d %b %Y %I:%M %p"),
