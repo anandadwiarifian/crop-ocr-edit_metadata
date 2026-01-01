@@ -5,7 +5,4 @@ A simple set of scripts to process my kid's preschool check-in/check-out photos 
 2. Updating the photo metadata dates to match the actual dates shown in the photos
 
 ## Why?
-
-Why? Why do people do things? To have fun, to kill some time?
-
-But really, I created this to properly organize photos from my kid's preschool app. Making sure they have the correct dates in their metadata for better accurate sequence in photo libraries.
+I created this to properly organize photos from my kid's preschool app. Making sure they have the correct dates in their metadata for better accurate sequence in photo libraries.
